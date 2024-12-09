@@ -78,7 +78,7 @@ export default function LandingPage() {
               href="https://www.google.com/maps/place/Projeto+Recomeçar/@-23.5557536,-46.5646354,15z/data=!4m6!3m5!1s0x94ce5fbd27a79fa5:0x2b7cc1d83824cc0!8m2!3d-23.5557536!4d-46.5646354!16s%2Fg%2F11f4z14sck?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-sky-300 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm"
             >
               <MapPin className="w-5 h-5" />
               <span>Localização</span>
