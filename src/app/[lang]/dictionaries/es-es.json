@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "firstGroup": {
+      "title": "Quem Somos",
+      "firstOption": "O que é FSAE",
+      "secondOption": "Nossa equipe",
+      "thirdOption": "Patrocinadores"
+    },
+    "secondGroup": {
+      "title": "Carros"
+    },
+    "thirdGroup": {
+      "title": "Galeria"
+    },
+    "fourthGroup": {
+      "title": "Mídia",
+      "firstOption": "Notícias",
+      "secondOption": "Vídeos"
+    },
+    "fifthGroup": {
+      "title": "Participe",
+      "firstOption": "Seja um patrocinador",
+      "secondOption": "Seja um membro"
+    },
+    "sixthGroup": {
+      "title": "Contato"
+    }
+  },
+  "aboutGroup": {
+    "about": {
+      "title": "Quem Somos",
+      "mainText": "Somos uma equipe de FSAE de alunos do Instituto Mauá de Tecnologia, que tem como objetivo o desenvolvimento de um projeto de carro tipo formula para competição.  A proposta consiste em desenvolver um projeto do zero, construí-lo, testá-lo e, enfim, levá-lo para competir. Embora a competição seja nosso objetivo final, todo o processo nos conduz ao aprendizado em diversas áreas, não só da engenharia e viabilidade do projeto, mas também de trabalho em grupo, organização, convivência, entre outros. Com a estrutura da Mauá, somos capazes de explorar ideias inovadoras na área e aprimorar o projeto a cada ano!",
+      "firstLink": "Conheça a organização da nossa equipe!",
+      "secondLink": "Conheça a Mauá e nossa oficina!",
+      "thirdLink": "Conheça a competição!"
+    },
+    "aboutFsae": {
+      "title": "O que é FSAE?",
+      "mainText": "A Formula SAE (FSAE) é uma competição estudantil organizada pela Associação de Engenheiros Automotivos (SAE), que acontece anualmente em sua versão nacional e internacional. O objetivo é que os alunos projetem e construam um carro tipo fórmula, para depois levá-lo para competir. A competição é composta por provas estáticas e dinâmicas. As estáticas são apresentações e relatórios que não envolvem exclusivamente o funcionamento do carro, tais como custos, apresentação do plano de negócios e projeto de engenharia. Já a etapa dinâmica envolve as provas de aceleração, skidpad, autocross, enduro e eficiência energética."
+    }
+  }
+}

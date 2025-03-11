@@ -1,24 +1,36 @@
-'use client'
-
 import { motion } from "framer-motion"
 import { Instagram, MapPin, Phone } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
+import { LangDictionary } from "@/[lang]/langDictionary";
+import { getDictionary } from "@/[lang]/dictionaries";
 
-export default function LandingPage() {
+export default async function Page({
+  params,
+}: {
+  // params: Promise<{ LangDictionary }>
+  params: Promise<{ lang: string }>;
+
+}) {
+  const { lang } = await params
+  // const dict = await getDictionary(lang) // en
+
+  // const lang = (await params).lang;
+  const dict: LangDictionary = await getDictionary(lang);
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
       <main className="container mx-auto px-4 py-6 flex flex-col items-center justify-center min-h-screen space-y-8">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center space-y-8"
-        >
+        > */}
+        <div className="text-center space-y-8">
           {/* Logo */}
           <div className="flex items-center justify-center mx-auto mb-7">
             <Image
-              src="/logo-full-color.svg"
+              src="/assets/images/logo-full-color.svg"
               alt="Projeto Recomeçar Logo"
               width={300}
               height={300}
@@ -31,6 +43,9 @@ export default function LandingPage() {
           <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100">
               Seja Bem-Vindo a Nossa Igreja
+              {
+                dict.navbar.firstGroup.title
+              }
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-400">
               Um lugar de recomeço, fé e comunhão
@@ -38,12 +53,13 @@ export default function LandingPage() {
           </div>
 
           {/* Service Times */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="max-w-md mx-auto space-y-4 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg"
-          >
+          > */}
+          <div className="max-w-md mx-auto space-y-4 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg">
             <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-4">
               Nossos Horários
             </h2>
@@ -65,15 +81,17 @@ export default function LandingPage() {
                 <span className="font-medium">Quintas às 20:15</span>
               </p>
             </div>
-          </motion.div>
+            {/* </motion.div> */}
+            </div>
 
           {/* Contact Links */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="flex flex-wrap justify-center gap-4 pt-4"
-          >
+          > */}
+          <div className="flex flex-wrap justify-center gap-4 pt-4">
             <Link
               href="https://www.google.com/maps/place/Projeto+Recomeçar/@-23.5557536,-46.5646354,15z/data=!4m6!3m5!1s0x94ce5fbd27a79fa5:0x2b7cc1d83824cc0!8m2!3d-23.5557536!4d-46.5646354!16s%2Fg%2F11f4z14sck?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
               target="_blank"
@@ -101,8 +119,10 @@ export default function LandingPage() {
               <Instagram className="w-5 h-5" />
               <span>Instagram</span>
             </Link>
-          </motion.div>
-        </motion.div>
+          {/* </motion.div>
+        </motion.div> */}
+        </div>
+        </div>
       </main>
     </div>
   )
